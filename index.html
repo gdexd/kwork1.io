@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-Truck | Грузоперевозки и спецтехника</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="truck-loader">
+                <i class="fas fa-truck-moving"></i>
+            </div>
+            <p>Загрузка...</p>
+        </div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="J-Truck Logo" class="logo-img">
+                <span class="logo-text">J-<span>TRUCK</span></span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#main" class="nav-link">Главная</a>
+                <a href="#products" class="nav-link">Техника</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+                <a href="http://j-truck.ru" target="_blank" class="nav-btn">
+                    Основной сайт
+                </a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero" id="main">
+        <div class="hero-bg"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-award"></i> Надежные перевозки с 2010 года
+                </div>
+                
+                <h1>
+                    <span>Грузоперевозки</span>
+                    <span class="highlight">спецтехникой</span> по всей России
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Полный спектр услуг по аренде и перевозке грузов любой сложности. 
+                    Надежно, быстро, в срок.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label">Единиц техники</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label">Лет работы</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="5000">0</div>
+                        <div class="stat-label">Довольных клиентов</div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="http://j-truck.ru" target="_blank" class="cta-btn">
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                        <span class="btn-text">Перейти на основной сайт</span>
+                    </a>
+                    <a href="#products" class="secondary-btn">
+                        <i class="fas fa-eye"></i> Посмотреть демо
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="floating-truck">
+                    <i class="fas fa-truck"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Демо-товары -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наша техника</h2>
+                <p class="section-subtitle">Примеры из нашего обширного парка спецтехники</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- КАРТОЧКА 1 -->
+                <div class="product-card">
+                    <div class="card-badge">В наличии</div>
+                    <div class="product-image">
+                        <img src="images/товар1.jpg" alt="Товар 1" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Тягач Volvo FH16</h3>
+                        <p class="product-description">
+                            Мощный тягач для междугородних и международных перевозок. 
+                            Грузоподъемность до 20 тонн. Современная система безопасности.
+                        </p>
+                        <div class="product-specs">
+                            <div class="spec">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>20 тонн</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Дизель</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="http://j-truck.ru" target="_blank" class="card-link">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- КАРТОЧКА 2 -->
+                <div class="product-card">
+                    <div class="card-badge">В наличии</div>
+                    <div class="product-image">
+                        <img src="images/товар2.jpg" alt="Товар 2" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Самосвал КамАЗ-6520</h3>
+                        <p class="product-description">
+                            Самосвал для перевозки сыпучих грузов. Объем кузова 20 м³. 
+                            Идеален для строительных работ и разработки карьеров.
+                        </p>
+                        <div class="product-specs">
+                            <div class="spec">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>25 тонн</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-cube"></i>
+                                <span>20 м³</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="http://j-truck.ru" target="_blank" class="card-link">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- КАРТОЧКА 3 -->
+                <div class="product-card">
+                    <div class="card-badge hot">Хит продаж</div>
+                    <div class="product-image">
+                        <img src="images/товар3.jpg" alt="Товар 3" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Кран-манипулятор ISUZU</h3>
+                        <p class="product-description">
+                            Грузовик с краном-манипулятором для погрузочно-разгрузочных работ. 
+                            Грузоподъемность крана 6 тонн. Вылет стрелы 14 метров.
+                        </p>
+                        <div class="product-specs">
+                            <div class="spec">
+                                <i class="fas fa-crane"></i>
+                                <span>6 тонн</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-ruler-vertical"></i>
+                                <span>14 м</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="http://j-truck.ru" target="_blank" class="card-link">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- КАРТОЧКА 4 -->
+                <div class="product-card">
+                    <div class="card-badge">Под заказ</div>
+                    <div class="product-image">
+                        <img src="images/товар4.jpg" alt="Товар 4" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Рефрижератор Mercedes</h3>
+                        <p class="product-description">
+                            Изотермический фургон с холодильной установкой для перевозки 
+                            скоропортящихся грузов. Температурный режим от -25°C до +12°C.
+                        </p>
+                        <div class="product-specs">
+                            <div class="spec">
+                                <i class="fas fa-snowflake"></i>
+                                <span>-25°C</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-cube"></i>
+                                <span>82 м³</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="http://j-truck.ru" target="_blank" class="card-link">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- КАРТОЧКА 5 -->
+                <div class="product-card">
+                    <div class="card-badge">В наличии</div>
+                    <div class="product-image">
+                        <img src="images/товар5.jpg" alt="Товар 5" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Автоцистерна MAN</h3>
+                        <p class="product-description">
+                            Цистерна для перевозки жидких грузов объемом 30 м³. 
+                            Подходит для ГСМ, пищевых продуктов, химических жидкостей.
+                        </p>
+                        <div class="product-specs">
+                            <div class="spec">
+                                <i class="fas fa-oil-can"></i>
+                                <span>30 м³</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Евро-5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="http://j-truck.ru" target="_blank" class="card-link">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-cta">
+                <p>Это лишь небольшая часть нашего парка</p>
+                <a href="http://j-truck.ru" target="_blank" class="main-site-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    Перейти на основной сайт для полного каталога
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Контакты</h2>
+                <p class="section-subtitle">Свяжитесь с нами удобным для вас способом</p>
+            </div>
+            
+            <div class="contacts-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <a href="tel:+78001234567">+7 (800) 123-45-67</a>
+                            <p>Бесплатный звонок по России</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:info@j-truck.ru">info@j-truck.ru</a>
+                            <p>Ответим в течение рабочего дня</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Промышленная, д. 15</p>
+                            <p>Складской комплекс "Логистик"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Режим работы</h3>
+                            <p>Пн-Пт: 9:00 - 18:00</p>
+                            <p>Сб: 10:00 - 15:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-section">
+                    <h3>Мы в социальных сетях</h3>
+                    <p>Подписывайтесь на наши соцсети, чтобы быть в курсе новостей и специальных предложений</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link vk">
+                            <i class="fab fa-vk"></i>
+                            <span>ВКонтакте</span>
+                        </a>
+                        <a href="#" class="social-link telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#" class="social-link youtube">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="#" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                    
+                    <div class="main-site-cta">
+                        <h4>Основной сайт</h4>
+                        <p>Для получения полной информации перейдите на наш основной сайт с полным каталогом и условиями сотрудничества</p>
+                        <a href="http://j-truck.ru" target="_blank" class="cta-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Перейти на j-truck.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="J-Truck Logo" class="footer-logo-img">
+                    <div class="footer-logo-text">
+                        <h3>J-TRUCK</h3>
+                        <p>Грузоперевозки и аренда спецтехники по всей России с 2010 года</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#main">Главная</a></li>
+                        <li><a href="#products">Техника</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="http://j-truck.ru" target="_blank">Основной сайт</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone-alt"></i> +7 (800) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@j-truck.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 J-Truck. Все права защищены.</p>
+                <p>Сайт-визитка для перенаправления на основной ресурс</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
